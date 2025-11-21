@@ -1,14 +1,3 @@
-"""
-pipeline_housing_opcionB.py
-Proyecto: Predicción y Clasificación sobre un dataset de precios de vivienda
-Dataset generado internamente (n=500) con nombres en español:
-'Precio', 'Habitaciones', 'Banos', 'Superficie_m2', 'Antiguedad', 'Garaje', 'Distrito', 'Calidad', 'alto_precio'
-Archivos de salida:
- - feature_importances_rf_reg.csv
- - classification_results_summary.csv
- - housing_with_clusters.csv
-Requisitos: pandas, numpy, scikit-learn, matplotlib, seaborn
-"""
 
 import os
 import numpy as np
@@ -30,9 +19,6 @@ from sklearn.metrics import (mean_absolute_error, mean_squared_error, r2_score,
                              accuracy_score, precision_score, recall_score, f1_score,
                              roc_auc_score, classification_report, silhouette_score, roc_curve, auc)
 
-# ----------------------------
-# GENERAR DATASET INTERNO (OPCIÓN B - NOMBRES EN ESPAÑOL)
-# ----------------------------
 np.random.seed(42)
 n = 500
 
